@@ -3,6 +3,8 @@ var sub = document.getElementById("sub");
 var mult = document.getElementById("mult");
 var div = document.getElementById("div");
 
+var par = document.getElementByID("resultat");
+
 
 function addition(){
     var n1 = document.getElementById("nombre1").value;
@@ -14,7 +16,10 @@ function addition(){
     var total = entier_n1 + entier_n2;
    
     console.log(total);
-    document.write(n1 + "+" + n2 + "=" + total);
+    var text = document.createTextNode(n1 + "+" + n2 + "=" + total);
+
+    paragraph.appendChild(text);
+    
 }
 add.addEventListener("click", addition);
 
@@ -29,7 +34,9 @@ function sous(){
     var total = entier_n1 - entier_n2;
 
     console.log(total);
-    document.write(n1 + "-" + n2 + "=" + total);
+    var text = document.createTextNode(n1 + "-" + n2 + "=" + total);
+
+    paragraph.appendChild(text);
 }
 sub.addEventListener("click", sous);
 
@@ -43,7 +50,9 @@ function multi(){
     var total = entier_n1 * entier_n2;
 
     console.log(total);
-    document.write(n1 + "x" + n2 + "=" + total);
+    var text = document.createTextNode(n1 + "x" + n2 + "=" + total);
+
+    paragraph.appendChild(text);
 }
 mult.addEventListener("click", multi);
 
@@ -57,6 +66,8 @@ function divi(){
     var total = entier_n1 / entier_n2;
 
     console.log(total);
-    document.write(n1 + "/" + n2 + "=" + total);
+    var text = document.createTextNode(n1 + "/" + n2 + "=" + total);
+
+    paragraph.appendChild(text);
 }
 div.addEventListener("click", divi);
