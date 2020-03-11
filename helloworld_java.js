@@ -3,7 +3,7 @@ var sub = document.getElementById("sub");
 var mult = document.getElementById("mult");
 var div = document.getElementById("div");
 
-var par = document.getElementByID("resultat");
+var par = document.getElementById("resultat");
 
 
 function addition(){
@@ -18,7 +18,7 @@ function addition(){
     console.log(total);
     var text = document.createTextNode(n1 + "+" + n2 + "=" + total);
 
-    paragraph.appendChild(text);
+    par.appendChild(text);
     
 }
 add.addEventListener("click", addition);
@@ -36,7 +36,7 @@ function sous(){
     console.log(total);
     var text = document.createTextNode(n1 + "-" + n2 + "=" + total);
 
-    paragraph.appendChild(text);
+    par.appendChild(text);
 }
 sub.addEventListener("click", sous);
 
@@ -52,7 +52,7 @@ function multi(){
     console.log(total);
     var text = document.createTextNode(n1 + "x" + n2 + "=" + total);
 
-    paragraph.appendChild(text);
+    par.appendChild(text);
 }
 mult.addEventListener("click", multi);
 
@@ -68,6 +68,6 @@ function divi(){
     console.log(total);
     var text = document.createTextNode(n1 + "/" + n2 + "=" + total);
 
-    paragraph.appendChild(text);
+    par.appendChild(text);
 }
 div.addEventListener("click", divi);
