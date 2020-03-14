@@ -1,1 +1,2 @@
-memory/nodemodules/*
+memory\node_modules\*
+memory/node_modules/*
