@@ -7,8 +7,13 @@ class App extends React.Component {
     console.log(card, 'cdclicked')
   }
   
-  
-  render() {
+    render() {
+      const won = new Date().getSeconds() % 2 === 0
+      return (
+        …
+        {won && <p>GAGNÉ !</p>}
+      )
+    }
     return (
       <div className="memory">
         <GuessCount guesses={0} />
