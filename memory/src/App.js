@@ -20,12 +20,11 @@ class App extends React.Component {
           <Card card="🐶" feedback="hidden" onClick={this.handleCardClick} />
           <Card card="🐱" feedback="justMatched" onClick={this.handleCardClick} />
   
-  
-        </div>
-      
-        {won && <p>GAGNÉ !</p>}
-      )
+          {won && <p>GAGNÉ !</p>}
 
+     
+        </div>
+      )
     
       }
   }
