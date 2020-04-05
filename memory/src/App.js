@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Header from './composant/Header'
-import Interface from './composant/interface'
+import Interface from './composant/Interface'
 
 class App extends Component {
  
