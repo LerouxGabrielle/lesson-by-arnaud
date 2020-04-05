@@ -3,10 +3,9 @@ import './interface.css'
 
 const lettres = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-const Bouton =  ({ bouton, feedback, onClick }) => (
+const Interface =  ({ bouton, feedback, onClick }) => (
+    lettres.split("").map((character, index) => (console.log(character + " | " + index))
+))
 
 
-)
-
-
-export default interface
+export default Interface
