@@ -4,8 +4,9 @@ import './Bouton.css'
 
 const Bouton = ({ bouton, onClick }) => (
     <div className="lettre" onClick={() => onClick(bouton)} >
-    
-        {bouton}
+      <p>
+          {bouton}
+      </p>
         
     </div>
   )

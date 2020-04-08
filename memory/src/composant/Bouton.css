@@ -1,5 +1,14 @@
 .lettre
     {
     background-color: orange;
-    float: left
+    float: left;
+    border: solid 1px black ;
+    margin: 0.2em;
+    width: 40px;
+    text-align: center;
+    }
+
+p
+    {
+        margin: auto
     }

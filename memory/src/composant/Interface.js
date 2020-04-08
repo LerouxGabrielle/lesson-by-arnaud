@@ -10,10 +10,14 @@ const Interface =  () => (
         <Bouton
         bouton={character}
         key={index}
-        onClick={null}
+        onClick={handleBoutonclick}
         />
     )
 ))
+
+function handleBoutonclick (bouton) {
+    console.log (bouton, 'clicked')
+}
 
 
 export default Interface
