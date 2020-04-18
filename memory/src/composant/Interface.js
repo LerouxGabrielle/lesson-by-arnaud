@@ -2,11 +2,6 @@ import React from 'react'
 import './Interface.css'
 import Bouton from './Bouton'
 
-const mot_a_trouver = "roger"
-
-
-var indices = []
-
 const Interface = ({lettres}) => (
     lettres.split("").map((character, index) =>
         (
@@ -18,20 +13,7 @@ const Interface = ({lettres}) => (
         )
     ))
 
-    function handleBoutonclick(bouton) {
-        var mot_local = mot_a_trouver.toLowerCase()
-    
-        bouton = bouton.toLowerCase()
-        for (var i = 0; i < mot_local.length; i++) {
-            if (mot_local[i] === bouton) { 
-                indices.push(i);
-    
-            }
-        
-
-        }
-        console.log(indices)
-    }    
+  
 
 // Compter le nombre de "true" donner par indexOf, si ce nombre est égale au nombre de caractère de 
 //mot_a_trouver alors on considère le jeu comme gagner.
