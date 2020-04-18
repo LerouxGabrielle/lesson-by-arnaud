@@ -2,8 +2,9 @@ import React from 'react'
 import './Interface.css'
 import Bouton from './Bouton'
 
-const Interface = ({lettres}) => (
-    lettres.split("").map((character, index) =>
+const Interface = ({lettres, handleBoutonclick, mot_a_afficher}) => (
+    <div>
+    {lettres.split("").map((character, index) =>
         (
             <Bouton
                 bouton={character}
@@ -11,9 +12,11 @@ const Interface = ({lettres}) => (
                 onClick={handleBoutonclick}
             />
         )
-    ))
-
-  
+    )}
+    {mot_a_afficher}
+    </div>
+)
+    
 
 // Compter le nombre de "true" donner par indexOf, si ce nombre est égale au nombre de caractère de 
 //mot_a_trouver alors on considère le jeu comme gagner.
