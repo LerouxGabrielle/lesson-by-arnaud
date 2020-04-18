@@ -4,9 +4,10 @@ import Bouton from './Bouton'
 
 const mot_a_trouver = "roger"
 
-const lettres = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-const Interface = () => (
+var indices = []
+
+const Interface = ({lettres}) => (
     lettres.split("").map((character, index) =>
         (
             <Bouton
@@ -18,7 +19,6 @@ const Interface = () => (
     ))
 
     function handleBoutonclick(bouton) {
-        var indices = []
         var mot_local = mot_a_trouver.toLowerCase()
     
         bouton = bouton.toLowerCase()
@@ -27,6 +27,8 @@ const Interface = () => (
                 indices.push(i);
     
             }
+        
+
         }
         console.log(indices)
     }    
@@ -34,6 +36,5 @@ const Interface = () => (
 // Compter le nombre de "true" donner par indexOf, si ce nombre est égale au nombre de caractère de 
 //mot_a_trouver alors on considère le jeu comme gagner.
 //pour éviter que une lettre "true" soit comptée deux fois alors il faut bloquer le bouton correspondant.
-
 
 export default Interface
