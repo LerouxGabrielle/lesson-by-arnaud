@@ -9,16 +9,20 @@ var aTrierMots = ["roger","rien","piano","moe","margarita","promo","aaa","aax","
     pour tous les tableau si tu fait une fonction pour comparer deux element
 */
 
+function tri(a,b)
+{
+return (a > b)?1:-1;
+}
+ 
 
 
-
-
+aTrierNombres.sort(tri);
+aTrierMots.sort(tri);
+aTrierLettres.sort(tri);
 
 console.log(aTrierNombres);
 console.log(aTrierLettres);
 console.log(aTrierMots);
-
-
 
 
 
