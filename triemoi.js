@@ -1,22 +1,24 @@
 //ordre decroisant
-var aTrierNombres = [5 ,42, 0, -42, 21, 51 , 6,3 ,2 , 1];
+var aTrierNombres = [5, 42, 0, -42, 21, 51, 6, 3, 2, 1];
 //ordre alphbetique en ignorant les le fait que ce soit majuscule ou minuscule
-var aTrierLettres = ['i','Z','e','z','A','b','c','a'];
+var aTrierLettres = ['i', 'Z', 'e', 'z', 'A', 'b', 'c', 'a'];
 //ordre alphabetique
-var aTrierMots = ["roger","rien","piano","moe","margarita","promo","aaa","aax","a","aaax", "nya"];
+var aTrierMots = ["roger", "rien", "piano", "moe", "margarita", "promo", "aaa", "aax", "a", "aaax", "nya"];
 /*
     ton code ici normalement tu dois pouvoire faire une seule fonction de trie 
     pour tous les tableau si tu fait une fonction pour comparer deux element
 */
 
-function tri(a,b)
-{
-return (a > b)?1:-1;
+function tri(a, b) {
+    return (a > b) ? 1 : -1;
 }
- 
+
+for (var i = 0; i < aTrierLettres.length; i++) {
+    aTrierLettres[i] = aTrierLettres[i].toLowerCase()
+}
 
 
-aTrierNombres.sort(tri);
+aTrierNombres = mysort(aTrierNombres);
 aTrierMots.sort(tri);
 aTrierLettres.sort(tri);
 
@@ -25,19 +27,34 @@ console.log(aTrierLettres);
 console.log(aTrierMots);
 
 
+function mysort(tableau) {
+    var Trier = []
+    var max = getmax(tableau);
+
+    trier.push(max);
+}
+
+function getmax(tableau) {
+    var maximum = Number.MIN_VALUE;
+
+    for (var i = 0; i < tableau.length; i++) {
+        if (tableau[i] > maximum) {
+            maximum = tableau[i];
+        }
+    }
+
+    return maximum;
 
 
+}
 
+//stocker la valeur max dans un tableau vide (trier) et le push dedans. Puis recommencer la boucle sans maximum
 
-
-
-
-
-
-
-
-
-
+// dans mysort suprimer la valeur max de tableau, puis relancer la même choses.
+//combien de fois aumaximum va  t on avoir besoin de relacer getmax pour avoir un tableau complet? (la fonction doit calculer, soit en valeur numérique, soit en test)
+// TANT QUE (WHILE)
+//Reflechir au minimum de nb de boucle a appliquer
+//retourner le tableau une fois trier (mysort)
 
 
 
