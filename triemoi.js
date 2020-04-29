@@ -48,6 +48,7 @@ function getmax(tableau) {
 
 }
 
+
 //stocker la valeur max dans un tableau vide (trier) et le push dedans. Puis recommencer la boucle sans maximum
 
 // dans mysort suprimer la valeur max de tableau, puis relancer la même choses.
@@ -55,17 +56,6 @@ function getmax(tableau) {
 // TANT QUE (WHILE)
 //Reflechir au minimum de nb de boucle a appliquer
 //retourner le tableau une fois trier (mysort)
-
-
-
-
-
-
-
-
-
-
-
 
 
 
